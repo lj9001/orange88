@@ -8,6 +8,17 @@
 <body>
   <script type="text/javascript">
     /**
+    第一题
+    **/
+    // Javascript中可以通过typeof得出的数据类型有几种？
+    // A. 5
+    // B. 6
+    // C. 7
+    // D. 8
+
+    //number,string,boolean,null,undefine,symbol,object,function
+
+    /**
     第二题
     **/
     var name='ggg';
@@ -56,7 +67,43 @@
        console.log(i);
       });
     }
+    /**
+    第七题
+    **/
+    for(var i= 0; i < 3; i++){
+      (function(x){
+        setTimeout(function(){
+          console.log(i);
+        })
+      })(i)
+    }
     
+    /**
+    第八题
+    **/
+    //以下代码输出'16'的是: 没有
+    // A. Math.random(16.51)+ ''
+    // B. Math.ceil(16.66) + ''
+    // C. 15 + '1'
+    // D. '14'.toString(8) 
+
+    /**
+    第九题
+    **/
+    // 下列关于哪个正则能匹配到字符串'88.狗蛋'? A
+    // A. /\d?.狗蛋/
+    // B. /\d+,{2}/
+    // C. /\d*[^\d]/
+    // D. /\d+^[\d]/
+
+    /**
+    第十题
+    **/
+    // 以下判断哪些为真？C
+    // A. '5' === 5
+    // B. [0] == true
+    // C. !3 < 1
+    // D. !Array.isArray([1,2,3])
     
   </script>
   
