@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>call</title>
+</head>
+<body>
+  <script type="text/javascript">
+    /**
+    第二题
+    **/
+    var name='ggg';
+    function Fn(){
+      console.log('222');
+      (function(){
+        this.name = 'fn';
+      }).call(window)
+    }
+    Fn.prototype.creat = function(){
+      this.name = '小明'
+    }
+    console.log(new new Fn().creat().name);
+
+    /**
+    第三题
+    **/
+    var val = 'goudan';
+    console.log('val is' + (val === 'goudan') ? 'goudan' : 'other');
+   
+   /**
+    第四题
+    **/
+    var name = 'goudan';
+    (function(){
+      if(name === 'goudan'){
+        var name = 'dachui';
+        console.log('bye' + name);
+      }
+      else{
+        console.log('hello'+name);
+      }
+    })();
+    /**
+    第五题
+    **/
+    (function(){
+      var a=b=5;
+    })()
+    console.log(b);
+    /**
+    第六题
+    **/
+    for(var i = 0;i < 3; i++){
+      setTimeout(() => {
+       console.log(i);
+      });
+    }
+    
+    
+  </script>
+  
+</body>
+</html>
